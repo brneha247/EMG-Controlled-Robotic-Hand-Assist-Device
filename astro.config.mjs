@@ -1,9 +1,10 @@
-// @ts-check
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 
-// https://astro.build/config
 export default defineConfig({
+  site: "https://brneha247.github.io",
+  base: "/EMG-Controlled-Robotic-Hand-Assist-Device",
+
   vite: {
     plugins: [tailwindcss()],
   },
