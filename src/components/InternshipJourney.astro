@@ -1,0 +1,317 @@
+<section id="internship-journey" class="py-16 px-6 bg-gray-50">
+  <div class="max-w-5xl mx-auto">
+
+    <h2 class="text-5xl font-bold mb-12 text-center">
+      Internship Journey
+    </h2>
+
+    <!-- Clinical Observation -->
+
+    <div class="bg-white border rounded-xl shadow-sm p-10 mb-8">
+      <h3 class="text-3xl font-bold mb-6">
+        Clinical Observation and Rehabilitation Needs Assessment
+      </h3>
+
+      <p class="text-gray-700 leading-9 text-justify">
+        Extensive observation sessions were conducted within Physiotherapy,
+        Occupational Therapy, and Augmentative and Alternative Communication
+        (AAC) departments. These sessions provided direct exposure to the
+        rehabilitation process and the challenges encountered by patients and
+        therapists.
+
+        Physiotherapy sessions demonstrated techniques used to improve strength,
+        balance, flexibility, coordination, and motor function. Occupational
+        Therapy focused on helping individuals perform daily activities
+        independently through targeted interventions.
+
+        Several challenges were observed, including pain, fear, reduced
+        concentration, delayed understanding, communication difficulties, and
+        trust-related barriers. Therapists emphasized maintaining eye contact,
+        interacting at the patient’s eye level, and utilizing visual cues and
+        picture-based communication systems to improve engagement and establish
+        trust.
+
+        The AAC department introduced various communication technologies,
+        including communication boards, PECS systems, tactile communication
+        aids, speech-generating devices, and applications such as Avaz AAC.
+        These observations highlighted the importance of designing assistive
+        technologies that are intuitive, accessible, affordable, and
+        user-centered.
+      </p>
+    </div>
+
+    <!-- Literature Survey -->
+
+    <div class="bg-white border rounded-xl shadow-sm p-10 mb-8">
+      <h3 class="text-3xl font-bold mb-6">
+        Problem Analysis and Literature Survey
+      </h3>
+
+      <p class="text-gray-700 leading-9 text-justify">
+        Following the allocation of the project topic, extensive research was
+        carried out to understand existing rehabilitation robotics solutions,
+        EMG-controlled assistive systems, and current technological
+        limitations.
+      </p>
+
+      <ul class="list-disc pl-8 mt-6 space-y-3 text-gray-700">
+        <li>EMG signal acquisition techniques</li>
+        <li>Signal preprocessing and feature extraction</li>
+        <li>Machine learning approaches for intent classification</li>
+        <li>Robotic hand exoskeleton designs</li>
+        <li>Rehabilitation assessment systems</li>
+        <li>Force and angle sensing mechanisms</li>
+      </ul>
+
+      <p class="text-gray-700 leading-9 text-justify mt-6">
+        Research papers, conference publications, technical articles, and
+        demonstration videos were studied to understand current developments in
+        rehabilitation robotics. Discussions with mentors helped refine the
+        project scope and identify feasible implementation approaches.
+      </p>
+    </div>
+
+    <!-- MSP430 -->
+
+    <div class="bg-white border rounded-xl shadow-sm p-10 mb-8">
+      <h3 class="text-3xl font-bold mb-6">
+        MSP430 Embedded Systems Development
+      </h3>
+
+      <p class="text-gray-700 leading-9 text-justify">
+        The MSP-EXP430FR4133 LaunchPad was introduced as the primary embedded
+        development platform for the project. Initial learning focused on GPIO
+        operation, LED control, LCD interfacing, analog sensor acquisition,
+        memory organization, clock systems, and microcontroller architecture.
+      </p>
+
+      <div class="mt-6">
+        <a
+          href="https://www.ti.com/tool/MSP-EXP430FR4133"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-blue-600 hover:underline"
+        >
+          MSP-EXP430FR4133 Official Documentation →
+        </a>
+      </div>
+
+      <p class="text-gray-700 leading-9 text-justify mt-6">
+        Initial attempts to program the board were unsuccessful due to limited
+        familiarity with the platform. To overcome these challenges,
+        datasheets, reference manuals, tutorials, and Texas Instruments
+        documentation were studied extensively.
+      </p>
+
+      <p class="text-gray-700 leading-9 text-justify mt-6">
+        Several introductory applications were successfully implemented,
+        including LED blinking, switch-controlled LEDs, LCD text display, and
+        interactive LCD messages. These exercises provided practical experience
+        with embedded systems development and real-time hardware interaction.
+      </p>
+    </div>
+
+    <!-- Debugging -->
+
+    <div class="bg-white border rounded-xl shadow-sm p-10 mb-8">
+      <h3 class="text-3xl font-bold mb-6">
+        Sensor Integration and Hardware Debugging
+      </h3>
+
+      <p class="text-gray-700 leading-9 text-justify">
+        Sensor interfacing experiments were performed using potentiometers,
+        ultrasonic sensors, and other peripheral devices. Sensor data was
+        successfully acquired and processed using the MSP430 platform.
+      </p>
+
+      <p class="text-gray-700 leading-9 text-justify mt-6">
+        Significant debugging efforts were required to resolve LCD display
+        issues, undefined register errors, clock configuration problems, LCD
+        memory mapping misunderstandings, and JTAG communication failures.
+      </p>
+
+      <p class="text-gray-700 leading-9 text-justify mt-6">
+        Through systematic testing and hardware verification, it was discovered
+        that the FH-1138P segmented LCD requires two memory bytes per digit
+        rather than one. The display driver was redesigned using correct
+        segment mapping techniques, resulting in successful character display
+        and scrolling text implementation.
+      </p>
+
+      <p class="text-gray-700 leading-9 text-justify mt-6">
+        An accelerometer integration attempt was also performed. Although the
+        implementation was not successful, it provided valuable experience in
+        hardware debugging and communication troubleshooting.
+      </p>
+    </div>
+
+    <!-- Data Logging -->
+
+    <div class="bg-white border rounded-xl shadow-sm p-10 mb-8">
+      <h3 class="text-3xl font-bold mb-6">
+        Data Logging and Monitoring Concepts
+      </h3>
+
+      <p class="text-gray-700 leading-9 text-justify">
+        Data acquisition and storage concepts were explored through the use of
+        a microSD card module. Potential applications included recording EMG
+        signals, force sensor measurements, rehabilitation session data, and
+        long-term patient monitoring information.
+      </p>
+
+      <p class="text-gray-700 leading-9 text-justify mt-6">
+        This phase introduced the importance of reliable data storage systems
+        for future rehabilitation analytics and clinical assessment.
+      </p>
+    </div>
+
+    <!-- ESP32 -->
+
+    <div class="bg-white border rounded-xl shadow-sm p-10 mb-8">
+      <h3 class="text-3xl font-bold mb-6">
+        ESP32-S3 Touchscreen Platform Evaluation
+      </h3>
+
+      <p class="text-gray-700 leading-9 text-justify">
+        The Waveshare ESP32-S3-Touch-LCD-4.3 development board was evaluated as
+        a potential Human Machine Interface (HMI) platform for the
+        rehabilitation device.
+      </p>
+
+      <div class="mt-6">
+        <a
+          href="https://www.waveshare.com/wiki/ESP32-S3-Touch-LCD-4.3"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-blue-600 hover:underline"
+        >
+          ESP32-S3-Touch-LCD-4.3 Documentation →
+        </a>
+      </div>
+
+      <p class="text-gray-700 leading-9 text-justify mt-6">
+        Multiple setup challenges were encountered, including COM port
+        detection failures, bootloader mode confusion, serial communication
+        issues, missing display libraries, and LCD example configuration
+        problems.
+      </p>
+
+      <p class="text-gray-700 leading-9 text-justify mt-6">
+        These issues were systematically investigated and resolved through
+        hardware verification, library installation, board configuration
+        adjustments, and communication testing.
+      </p>
+    </div>
+
+    <!-- Dashboard -->
+
+    <div class="bg-white border rounded-xl shadow-sm p-10 mb-8">
+      <h3 class="text-3xl font-bold mb-6">
+        LVGL Rehabilitation Dashboard Development
+      </h3>
+
+      <p class="text-gray-700 leading-9 text-justify">
+        After validating LCD and touchscreen operation, a rehabilitation
+        dashboard was developed using LVGL. The dashboard displayed simulated
+        rehabilitation parameters such as EMG level, user intent, grip force,
+        joint angle, calibration status, and safety alerts.
+      </p>
+
+      <ul class="list-disc pl-8 mt-6 space-y-3 text-gray-700">
+        <li>EMG Monitoring</li>
+        <li>User Intent Detection</li>
+        <li>Grip Force Display</li>
+        <li>Joint Angle Visualization</li>
+        <li>Calibration Status</li>
+        <li>Safety Alerts</li>
+      </ul>
+
+      <p class="text-gray-700 leading-9 text-justify mt-6">
+        Interactive controls were implemented to simulate rehabilitation
+        workflows. Intent states such as RELAX, ASSIST, and GRIP were added,
+        along with force-limit safety mechanisms.
+      </p>
+    </div>
+
+    <!-- UI Design -->
+
+    <div class="bg-white border rounded-xl shadow-sm p-10 mb-8">
+      <h3 class="text-3xl font-bold mb-6">
+        User Interface Design and Navigation
+      </h3>
+
+      <p class="text-gray-700 leading-9 text-justify">
+        Several iterations of interface refinement were performed to improve
+        readability and usability. Enhancements included larger fonts, improved
+        spacing, better widget placement, and navigation controls.
+      </p>
+
+      <p class="text-gray-700 leading-9 text-justify mt-6">
+        The final workflow consisted of a Home Screen, Dashboard Screen,
+        Stop/Sleep Screen, Wake Screen, and Back Navigation functionality,
+        providing a complete user interaction flow.
+      </p>
+    </div>
+
+    <!-- Calibration -->
+
+    <div class="bg-white border rounded-xl shadow-sm p-10 mb-8">
+      <h3 class="text-3xl font-bold mb-6">
+        Calibration System Concept
+      </h3>
+
+      <p class="text-gray-700 leading-9 text-justify">
+        A calibration mechanism was conceptualized to address one of the
+        project's primary challenges: EMG signal variability caused by
+        electrode placement differences and patient-specific physiological
+        factors.
+      </p>
+
+      <p class="text-gray-700 leading-9 text-justify mt-6">
+        The proposed system measures baseline muscle activity before therapy
+        begins and automatically adjusts intent-detection thresholds for each
+        patient. This personalized approach aims to improve the reliability and
+        accuracy of EMG-based intent classification.
+      </p>
+    </div>
+
+ <!-- Ongoing Project -->
+
+<div class="bg-red-50 border border-red-200 rounded-xl shadow-sm p-10 mb-8">
+  <h3 class="text-3xl font-bold text-red-900 mb-6">
+    Project Status – Ongoing Development
+  </h3>
+
+  <p class="text-gray-700 leading-9 text-justify">
+    The project is currently under active development. Clinical observations,
+    literature review, embedded systems development, LCD debugging, sensor
+    interfacing, ESP32 touchscreen evaluation, dashboard development, and
+    calibration planning have been completed.
+  </p>
+
+  <p class="text-gray-700 leading-9 text-justify mt-6">
+    Future work includes EMG signal acquisition using MyoWare sensors, signal
+    preprocessing, feature extraction, machine-learning-based intent
+    classification, force and angle sensing integration, actuator control,
+    wearable splint development, and clinical validation.
+  </p>
+
+  <p class="text-gray-700 leading-9 text-justify mt-6">
+    The next phase of development will focus on integrating EMG sensors,
+    implementing real-time signal processing algorithms, developing intent
+    classification models, and constructing the wearable robotic hand splint.
+    The ultimate goal is to create a clinically viable rehabilitation device
+    capable of providing safe and adaptive assistance for stroke and spinal
+    cord injury patients.
+  </p>
+
+  <div class="mt-8">
+    <span
+      class="inline-flex items-center px-4 py-2 rounded-full bg-red-100 text-red-900 font-semibold"
+    >
+      🚀 Current Status: Development In Progress
+    </span>
+  </div>
+</div>
+  </div>
+</section>

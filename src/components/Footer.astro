@@ -1,0 +1,75 @@
+---
+import { siteConfig } from "../config";
+---
+
+<footer class="relative bg-gray-50 border-t border-gray-200">
+  <div class="mx-auto max-w-6xl px-6 py-12 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+
+      <!-- Left Side -->
+      <div class="flex flex-col gap-4">
+        <h3 class="text-2xl font-bold text-gray-800">
+          {siteConfig.name}
+        </h3>
+
+        <p class="text-base text-gray-600">
+          {siteConfig.title}
+        </p>
+
+        <div class="flex gap-x-6">
+
+          <!-- Email -->
+          <a
+            href={`mailto:${siteConfig.social.email}`}
+            aria-label="Email"
+            class="text-gray-600 hover:text-blue-600 transition-colors"
+          >
+            Email
+          </a>
+
+          <!-- LinkedIn -->
+          <a
+            href={siteConfig.social.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            class="text-gray-600 hover:text-blue-600 transition-colors"
+          >
+            LinkedIn
+          </a>
+
+          <!-- GitHub -->
+          <a
+            href={siteConfig.social.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            class="text-gray-600 hover:text-blue-600 transition-colors"
+          >
+            GitHub
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Right Side -->
+      <div class="hidden md:flex flex-col items-end gap-4">
+
+        <nav class="flex gap-x-8">
+          <a
+            href="#about"
+            class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
+          >
+            About
+          </a>
+        </nav>
+
+        <p class="text-sm text-gray-500">
+          © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+</footer>
