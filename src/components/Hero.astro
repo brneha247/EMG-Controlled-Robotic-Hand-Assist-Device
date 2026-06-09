@@ -10,45 +10,59 @@ import { siteConfig } from "../config";
   <div class="absolute inset-0 -z-10 bg-gray-50"></div>
 
   <div class="h-full mx-auto p-8 sm:p-12 md:p-24 flex items-center">
-    <div>
-
-      <!-- Hi I'm -->
-      <h2
-        class="text-2xl sm:text-3xl md:text-4xl text-gray-700 animate-fade-in"
-        style="font-family:'Times New Roman', Times, serif;"
-      >
-        Hi, I'm
-      </h2>
-
-      <!-- Name -->
-      <h1
-        class="mt-4 text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-black animate-fade-in animation-delay-200"
-        style="font-family:'Times New Roman', Times, serif;"
-      >
-        B R NEHA
-      </h1>
-
-      <!-- Project Title -->
-      <p
-        class="mt-8 text-lg sm:text-xl md:text-2xl text-gray-600 animate-fade-in animation-delay-400"
-        style="font-family:'Times New Roman', Times, serif;"
-      >
-        EMG-Controlled Robotic Hand Assist Device
-      </p>
-
     
+    <!-- Text + Emoji Container -->
+    <div class="flex items-center gap-16 w-full">
+
+      <!-- Text Section -->
+      <div>
+
+        <!-- Hi I'm -->
+        <h2
+          class="text-2xl sm:text-3xl md:text-4xl text-gray-700 animate-fade-in"
+          style="font-family:'Times New Roman', Times, serif;"
+        >
+          Hi, I'm
+        </h2>
+
+        <!-- Name -->
+        <h1
+          class="mt-4 text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-black animate-fade-in animation-delay-200"
+          style="font-family:'Times New Roman', Times, serif;"
+        >
+          B R NEHA
+        </h1>
+
+        <!-- Project Title -->
+        <p
+          class="mt-8 text-lg sm:text-xl md:text-2xl text-gray-600 animate-fade-in animation-delay-400"
+          style="font-family:'Times New Roman', Times, serif;"
+        >
+          EMG-Controlled Robotic Hand Assist Device
+        </p>
+
+      </div>
+
+      <!-- Emoji Image -->
+      <img
+        src="/emoji-hi.png"
+        alt="Waving Emoji"
+        class="hidden md:block w-[450px] h-auto animate-fade-in animation-delay-400"
+      />
+
     </div>
+
   </div>
 
   <!-- Social Icons -->
   <div
-    class="absolute bottom-0 left-0 right-0 p-8 sm:p-12 md:p-24 flex gap-x-6 text-gray-700 animate-fade-in animation-delay-600"
+    class="hidden"
   >
 
     {
       siteConfig.social?.email && (
         <a
-          href={`mailto:${siteConfig.social.email}`}
+          href={`mailto:nehnehaaz@gmail.com`}
           aria-label="Email"
           class="transition-colors duration-300 hover:text-blue-600"
         >
